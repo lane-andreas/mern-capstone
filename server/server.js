@@ -14,7 +14,14 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin:
+      process.env.NODE_ENV === "production"
+        ? "https://mern-capstone.vercel.app"
+        : "http://localhost:3000",
+  })
+);
 app.use(express.json());
 
 // Route Middleware
