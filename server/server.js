@@ -16,10 +16,7 @@ connectDB();
 // Middleware
 app.use(
   cors({
-    origin: [
-      "https://mern-capstone-9l8bo3dvb-lane-andreas-projects.vercel.app",
-      "http://localhost:3000",
-    ],
+    origin: ["https://mern-capstone.vercel.app", "http://localhost:3000"],
     credentials: true,
   })
 );

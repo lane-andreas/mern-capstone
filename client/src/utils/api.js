@@ -2,7 +2,7 @@ import axios from "axios";
 
 const baseURL =
   process.env.NODE_ENV === "production"
-    ? "https://mern-capstone-9l8bo3dvb-lane-andreas-projects.vercel.app/api"
+    ? "https://mern-capstone.vercel.app/api"
     : "http://localhost:5000/api";
 
 const api = axios.create({ baseURL });
