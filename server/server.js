@@ -17,8 +17,7 @@ connectDB();
 app.use(
   cors({
     origin: [
-      "https://mern-capstone.vercel.app",
-      "https://www.mern-capstone.vercel.app",
+      "https://mern-capstone-nylxwbvi7-lane-andreas-projects.vercel.app/",
       "http://localhost:3000",
     ],
     credentials: true,
